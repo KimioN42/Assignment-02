@@ -41,8 +41,6 @@
   color: #f2f2f2;
   align-content: center;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 /* Change background on mouse-over */
@@ -50,7 +48,7 @@
 .links a {
   display: inline-block;
   font-family: "Copperplate";
-
+  text-decoration: none;
 }
 
 .links a:hover {
@@ -101,15 +99,15 @@
   background-color: #333;
   z-index: 3;
   text-align: center;
+  color: white;
   font-family: "Copperplate";
 }
-
 
 
 /*Content styling*/
 
 .content {
-  
+
 }
 
 .content p {
