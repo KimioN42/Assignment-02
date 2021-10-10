@@ -5,22 +5,24 @@
   top: 0; /*starting at the top-left*/
   left: 0;
   width: 100%; /*that's so the topbar spans the entire width of the page*/
-  height: 100px; /*giving a fixed height not to interfere with the sidebar*/
+  height: 150px; /*giving a fixed height not to interfere with the sidebar*/
   z-index: 3; /*apparently this is supposed to give an order for what should be on top of what, in css*/
 }
 
 .header .logo {
   float: left;
   display: block;
-  padding: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 
 .header .companyinfo {
-  float: left;
+  align-content: center;
 }
 
 #title {
+  text-align: center;
   font-family: "Copperplate";
   font-size: 24px;
 }
@@ -35,15 +37,22 @@
 
 /* Links inside the navbar */
 .header .links {
-  float: left;
-  display: block;
+  float: center;
   color: #f2f2f2;
+  align-content: center;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 /* Change background on mouse-over */
+
+.links a {
+  display: inline-block;
+  font-family: "Copperplate";
+
+}
+
 .links a:hover {
   background: #ddd;
   color: black; 
@@ -55,12 +64,13 @@
   height: 100%; 
   width: 160px; 
   position: fixed;  
-  top: 100px;  /*starting at 50px not to interfere with topbar*/
+  top: 150px;  /*starting at 50px not to interfere with topbar*/
   left: 0;    
   bottom: 50px;
   background-color: #111; 
   overflow-x: hidden; 
   z-index: 2;
+  font-family: cursive;
 }
 
 /* The navigation menu links */
@@ -99,21 +109,14 @@
 /*Content styling*/
 
 .content {
-  background: red;
-  left: 160px;
-  top: 50px;
-  width: 100%;
-  /*padding-left: 160px;*/
-  /*debugging only*/
-/*  border-style: solid;
-  border-width: 10;
-  border-color: yellow;*/
+  
 }
 
 .content p {
   padding-left: 160px;
   text-align: left;
   display: inline-block;
+  background-color: red;
 }
 
 
