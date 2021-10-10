@@ -6,20 +6,13 @@
   left: 0;
   width: 100%; /*that's so the topbar spans the entire width of the page*/
   height: 100px; /*giving a fixed height not to interfere with the sidebar*/
-  z-index: 3; 
-  /*debugging only*/
-/*  border-style: solid;
-  border-width: 10;
-  border-color: green;*/
+  z-index: 3; /*apparently this is supposed to give an order for what should be on top of what, in css*/
 }
-
-
 
 .header .logo {
   float: left;
   display: block;
   padding: 20px;
-  font-family: "Copperplate";
 }
 
 
@@ -27,9 +20,22 @@
   float: left;
 }
 
+#title {
+  font-family: "Copperplate";
+  font-size: 24px;
+}
+
+#subtitle {
+  font-family: monospace;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 12px
+}
+
+
 /* Links inside the navbar */
 .header .links {
-  float: ;
+  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -37,11 +43,10 @@
   text-decoration: none;
 }
 
-
 /* Change background on mouse-over */
 .links a:hover {
   background: #ddd;
-  color: black;
+  color: black; 
 }
 
 
@@ -110,20 +115,5 @@
   text-align: left;
   display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
