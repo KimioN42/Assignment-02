@@ -3,7 +3,7 @@
 .header {
   overflow: hidden;
   background-color: #555;
-  position: fixed; 
+  position: fixed;
   top: 0; /*starting at the top-left*/
   left: 0;
   width: 100%; /*that's so the topbar spans the entire width of the page*/
@@ -30,7 +30,7 @@
   align-content: center;
   text-align: center;
   font-weight: bold;
-  font-size: 14px
+  font-size: 14px;
 }
 
 /* Change background on mouse-over */
@@ -44,21 +44,20 @@
 
 .links a:hover {
   background: #ddd;
-  color: black; 
+  color: black;
 }
-
 
 /* The navbar/sidebar menu */
 /*====================================*/
 .navbar {
-  height: 100%; 
-  width: 160px; 
-  position: fixed;  
-  top: 150px;  /*starting at 50px not to interfere with topbar*/
-  left: 0;    
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 150px; /*starting at 50px not to interfere with topbar*/
+  left: 0;
   bottom: 50px;
-  background-color: #111; 
-  overflow-x: hidden; 
+  background-color: #111;
+  overflow-x: hidden;
   z-index: 2;
   font-family: "Copperplate";
 }
@@ -78,15 +77,14 @@
   background: red;
 }
 
-
 /*Footer styling*/
 /*===========================================*/
 
 .bottombar {
-  position: fixed; 
+  position: fixed;
   left: 0px;
-  bottom: 0; 
-  width: 100%; 
+  bottom: 0;
+  width: 100%;
   height: 50px;
   overflow: hidden;
   background-color: #333;
@@ -95,7 +93,6 @@
   color: white;
   font-family: "Copperplate";
 }
-
 
 /*Content styling*/
 /*=======================================*/
@@ -114,7 +111,6 @@
   font-weight: bold;
 }
 
-
 .content .pet_pic {
   float: left;
   display: block;
@@ -122,6 +118,10 @@
   border-width: 1px;
   border-color: black;*/
   padding-bottom: 50px;
+}
+
+.content .pet_pic img {
+  border-radius: 25%;
 }
 
 .pet_pic figcaption {
@@ -132,5 +132,3 @@
 .content .pet_pic:hover {
   background-color: #555;
 }
-
-
