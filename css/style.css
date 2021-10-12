@@ -1,3 +1,5 @@
+/*Header styling*/
+/*====================================*/
 .header {
   overflow: hidden;
   background-color: #555;
@@ -16,32 +18,27 @@
   padding-left: 15px;
 }
 
-
-.companyinfo {
-  align-content: center;
-}
-
 #title {
   text-align: center;
-  font-family: "Copperplate";
-  font-size: 24px;
+  font-family: "Impact";
+  font-size: 26px;
+  font-weight: bold;
 }
 
 #subtitle {
   font-family: cursive;
   align-content: center;
   text-align: center;
+  font-weight: bold;
   font-size: 14px
 }
 
 /* Change background on mouse-over */
 
-.links a {
-  display: inline-block;
-  align-content: center;
-  font-family: "Copperplate";
+.links li a {
+  font-family: "Impact";
   color: black;
-  text-align: right;
+  padding: 12px;
   text-decoration: none;
 }
 
@@ -51,7 +48,8 @@
 }
 
 
-/* The navbar menu */
+/* The navbar/sidebar menu */
+/*====================================*/
 .navbar {
   height: 100%; 
   width: 160px; 
@@ -81,7 +79,8 @@
 }
 
 
-/*Footer*/
+/*Footer styling*/
+/*===========================================*/
 
 .bottombar {
   position: fixed; 
@@ -99,6 +98,7 @@
 
 
 /*Content styling*/
+/*=======================================*/
 .content {
   padding-left: 160px;
   padding-top: 150px;
@@ -108,27 +108,29 @@
   /*background-color: red;*/
 }
 
-/*.content figure {
-  display: grid;
-  align-content: center;
-  text-align: center;
-  border-style: solid;
-  border-width: 5px;
-  border-color: darkred;
-}*/
+.content #selectedcategory {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
-img:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+.content .pet_pic {
+  float: left;
+  display: block;
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: black;*/
+  padding-bottom: 50px;
 }
-img {
-    transition: transform 0.2s;
-    -webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -o-transition: -o-transform 0.2s;
+
+.pet_pic figcaption {
+  font-family: "Helvetica";
+  height: auto;
 }
+
+.content .pet_pic:hover {
+  background-color: #555;
+}
+
 

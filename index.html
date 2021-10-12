@@ -10,64 +10,72 @@
   <body>
     <div class="header">
       <div class="logo">
-        <a href="#logo"><img src="src/PetStoreLogo.png" height="110" width="140" title = "Kimio's Pet Store Logo" alt = "kpslogo"></a>
+        <a href="#logo"><img src="src/PetStoreLogo.png" height="110" width="200" title = "Kimio's Pet Store Logo" alt = "kpslogo"></a>
       </div>
       <div class="companyinfo">
         <p id="title"> Kimio's Pet Store </p>
         <p id="subtitle"> Cutest pets in town</p>
       </div>
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#pets">Pets</a>
-        <a href="#contact">Contact</a>
-        <a href="#aboutus">About us</a>
+      <!-- using a flexbox was the only way I found to leave this UL horizontally centered inside the div -->
+      <!-- if there's another method, please let me know -->
+      <!-- it worked fine for me on chrome and safari -->
+      <div class="links" style="display: flex; justify-content: center;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+          <li style="display: inline;"><a href="#home">Home</a></li>
+          <li style="display: inline;"><a href="#pets">Pets</a></li>
+          <li style="display: inline;"><a href="https://github.com/KimioN42">Contact</a></li>
+          <li style="display: inline;"><a href="https://www.torontohumanesociety.com/">About us</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="navbar">
       <div class="sidebar">
-        <a href="#Cats">Cats</a>
-        <a href="#Dogs">Dogs</a>
-        <a href="#Others">Others</a>
+        <ul style="list-style-type: none; margin: 0; padding: 0;" >
+          <li><a href="https://www.google.com/search?q=cats&rlz=1C5CHFA_enCA973CA973&sxsrf=AOaemvIPVhTZ1JDPZnKVm2Zh-WbJIz5WYQ:1634016372444&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwjrur6rkcTzAhWLSTABHZ9lD3kQ_AUoAXoECAEQAw&biw=761&bih=821&dpr=2">Cats</a></li>
+          <li><a href="https://www.google.com/search?q=dogs&tbm=isch&ved=2ahUKEwih6bqskcTzAhX-gHIEHZ0mBTwQ2-cCegQIABAA&oq=dogs&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIHCAAQsQMQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzoHCCMQ7wMQJzoKCCMQ7wMQ6gIQJ1CrWVjTYmCZZGgBcAB4AIABWIgBgwSSAQE3mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=dhxlYaHWHP6BytMPnc2U4AM&bih=821&biw=761&rlz=1C5CHFA_enCA973CA973">Dogs</a></li>
+          <li><a href="https://www.google.com/search?q=pets&rlz=1C5CHFA_enCA973CA973&sxsrf=AOaemvIjl2_hR8axdG--UIOA73TVpRDxyA:1634016650500&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjL7ImwksTzAhVPB50JHYbYDlQQ_AUoAXoECAIQAw&biw=761&bih=821&dpr=2">Others</a></li>
+        </ul>
       </div> 
     </div>
 
     <div class="content">
-      <figure>
-        <img src="./src/Cats/1.jpeg" height="200px" width="200px" alt="cat1" title="cat1">
-        <figcaption>Cat 1</figcaption>
+      <p id="selectedcategory">Cats for adoption</p>
+      <figure class="pet_pic">
+        <img src="./src/Cats/1.jpeg" height="300px" width="300px" alt="cat1" title="2 months">
+        <figcaption>Phill</figcaption>
       </figure> 
-      <figure>
-        <img src="./src/Cats/2.jpg" height="200px" width="200px" alt="cat2" title="cat2">
-        <figcaption>Cat 2</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/2.jpg" height="300px" width="300px" alt="cat2" title="2.5 months">
+        <figcaption>Claire</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/3.png" height="200px" width="200px" alt="cat3" title="cat3">
-        <figcaption>Cat 3</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/3.png" height="300px" width="300px" alt="cat3" title="3 months">
+        <figcaption>Alex</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/4.jpg" height="200px" width="200px" alt="cat4" title="cat4">
-        <figcaption>Cat 4</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/4.jpg" height="300px" width="300px" alt="cat4" title="1 month">
+        <figcaption>Hayley</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/5.jpg" height="200px" width="200px" alt="cat5" title="cat5">
-        <figcaption>Cat 5</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/5.jpg" height="300px" width="300px" alt="cat5" title="4 months">
+        <figcaption>Luke</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/6.png" height="200px" width="200px" alt="cat6" title="cat6">
-        <figcaption>Cat 6</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/6.png" height="300px" width="300px" alt="cat6" title="8 months">
+        <figcaption>Manny</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/7.jpeg" height="200px" width="200px" alt="cat7" title="cat7">
-        <figcaption>Cat 7</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/7.jpeg" height="300px" width="300px" alt="cat7" title="14 months">
+        <figcaption>Cam</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/8.jpg" height="200px" width="200px" alt="cat8" title="cat8">
-        <figcaption>Cat 8</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/8.jpg" height="300px" width="300px" alt="cat8" title="26 months">
+        <figcaption>Mitchel</figcaption>
       </figure>
-      <figure>
-        <img src="./src/Cats/9.jpg" height="200px" width="200px" alt="cat9" title="cat9">
-        <figcaption>Cat 9</figcaption>
+      <figure class="pet_pic">
+        <img src="./src/Cats/9.jpg" height="300px" width="300px" alt="cat9" title="64 months">
+        <figcaption>Lili</figcaption>
       </figure>
     </div>
 
